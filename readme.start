@@ -1,0 +1,4 @@
+sudo su postgres
+/usr/local/bin/pg_ctl -D /usr/local/pgsql/10.7/data -l /var/log/postgres/10.7/log start
+exit
+python3 behold.py >/dev/null &
